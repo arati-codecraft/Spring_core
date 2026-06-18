@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Online Examination System</title>
+
+<link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<body>
+
+	<header>
+
+		<nav>
+
+			<div class="logo">ONLINE EXAMINATION SYSTEM</div>
+
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+
+			<button class="login-btn" onclick="openLogin()">Login</button>
+
+		</nav>
+
+	</header>
+
+	<section class="hero">
+
+		<h1>Welcome To Online Examination System</h1>
+
+		<p>Attend exams online easily and securely.</p>
+
+	</section>
+	<section class="info-section">
+
+		<div class="info-box">
+
+			<img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png">
+
+			<h2>Online Exams</h2>
+
+			<p>Students can attend exams anytime and anywhere using our
+				secure online examination system.</p>
+
+		</div>
+
+		<div class="info-box">
+
+			<img src="https://cdn-icons-png.flaticon.com/512/1995/1995574.png">
+
+			<h2>Fast Results</h2>
+
+			<p>Automatic result generation helps students get instant marks
+				and performance reports.</p>
+
+		</div>
+
+	</section>
+
+	<section id="about" class="about">
+
+		<h2>About Us</h2>
+
+		<p>This system helps students attend online exams and view results
+			digitally. Admin can manage exams, students, and questions.</p>
+
+	</section>
+
+	<section id="contact" class="contact">
+
+		<h2>Contact</h2>
+
+		<p>Email : support@gmail.com</p>
+		<p>Phone : +91 9876543210</p>
+
+	</section>
+
+	<!-- LOGIN POPUP -->
+
+	<div class="popup" id="popup">
+
+		<div class="popup-content">
+
+			<span class="close" onclick="closeLogin()">&times;</span>
+
+			<h2>Select Login</h2>
+
+			<a href="#" onclick="showAdminLogin()">
+				<button>Admin Login</button>
+			</a> <a href="#" onclick="showStudentLogin()">
+				<button>Student Login</button>
+			</a>
+
+		</div>
+
+	</div>
+
+	<!-- ADMIN LOGIN FORM -->
+
+	<div class="popup" id="adminPopup">
+
+		<div class="popup-content">
+
+			<span class="close" onclick="closeAdmin()">&times;</span>
+
+			<h2>Admin Login</h2>
+
+			<form name="frm" action="adminLoginServlet" method="Post">
+
+				<input type="email" name="email" placeholder="Enter Email" required>
+
+				<input type="password" name="password" placeholder="Enter Password"
+					required>
+
+				<button type="submit">Login</button>
+
+			</form>
+
+		</div>
+
+	</div>
+
+	<!-- STUDENT LOGIN FORM -->
+
+	<div class="popup" id="studentPopup">
+
+		<div class="popup-content">
+
+			<span class="close" onclick="closeStudent()">&times;</span>
+
+			<h2>Student Login</h2>
+
+			<form action="studentlogin" method="post">
+
+				<input type="email" name="email" placeholder="Enter Email" required>
+
+				<input type="password" name="password" placeholder="Enter Password"
+					required>
+
+				<button type="submit">Login</button>
+
+			</form>
+
+			<p>
+				Not Registered? <a href="#" onclick="showRegister()"> Register
+					Here </a>
+			</p>
+
+		</div>
+
+	</div>
+
+	<!-- REGISTER FORM -->
+
+	<div class="popup" id="registerPopup">
+
+		<div class="popup-content">
+
+			<span class="close" onclick="closeRegister()">&times;</span>
+
+			<h2>Student Registration</h2>
+
+			<form name="frm" action=studentRegisterServlet method="Post">
+
+				<input type="text" name="name" placeholder="Enter Name" required>
+
+				<input type="email" name="email" placeholder="Enter Email" required>
+
+				<input type="password" name="password" placeholder="Enter Password"
+					required> <input type="text" name="course"
+					placeholder="Enter Course"> <input type="text"
+					name="mobile" placeholder="Enter Mobile">
+
+				<button type="submit">Register</button>
+
+			</form>
+
+		</div>
+
+	</div>
+
+	<script src="JS/Validation.js"></script>
+
+</body>
+</html>

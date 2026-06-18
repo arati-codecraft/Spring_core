@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+
+	<bean id="c"
+		  class="org.model.Company"
+		  scope="singleton">
+
+		<property name="name" value="TCS"/>
+		<property name="TAN" value="TAN123"/>
+		<property name="PAN" value="PAN456"/>
+
+	</bean>
+
+	<bean id="m"
+		  class="org.model.MSME"
+		  scope="singleton">
+
+		<constructor-arg ref="c"/>
+
+	</bean>
+
+</beans>

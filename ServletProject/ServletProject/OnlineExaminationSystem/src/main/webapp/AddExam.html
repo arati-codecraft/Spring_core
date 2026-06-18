@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add Exam</title>
+
+<link rel="stylesheet" href="CSS/form.css">
+
+</head>
+<body>
+
+	<div class="form-container">
+
+		<h1>Create Exam</h1>
+
+		<form action="addExamServlet" method="post">
+
+			<input type="text" name="examname" placeholder="Enter Exam Name"
+				required> <input type="text" name="subject"
+				placeholder="Enter Subject Name" required>
+			<input type="number" name="questions" placeholder="Total Questions"
+				required> 
+			<input type="number" name="marks" placeholder="Total Marks" required> <input type="number"
+				name="duration" placeholder="Exam Duration" required>
+
+			<button type="submit">Create Exam</button>
+
+		</form>
+
+	</div>
+
+</body>
+</html>

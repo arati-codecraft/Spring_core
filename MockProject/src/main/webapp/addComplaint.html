@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Add Complaint</title>
+
+    <link rel="stylesheet"
+          href="CSS/style.css">
+
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+    <div class="logo">
+        ComplaintSystem
+    </div>
+
+    <ul>
+
+        <li>
+            <a href="index.html">
+                Dashboard
+            </a>
+        </li>
+
+        <li>
+            <a href="addComplaint.html">
+                Add Complaint
+            </a>
+        </li>
+
+        <li>
+            <a href="viewComplaints">
+                View Complaints
+            </a>
+        </li>
+
+        <li>
+            <a href="searchComplaint.html">
+                Search Complaint
+            </a>
+        </li>
+
+        <li>
+            <a href="updateComplaint.html">
+                Update Complaint
+            </a>
+        </li>
+
+        <li>
+            <a href="deleteComplaint.html">
+                Delete Complaint
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+<!-- TOPBAR -->
+
+<div class="topbar">
+
+    <h2>
+        Add Complaint
+    </h2>
+
+    <div class="profile">
+        Welcome Admin
+    </div>
+
+</div>
+
+<!-- MAIN CONTENT -->
+
+<div class="main-content">
+
+    <div class="card">
+
+        <h1>
+            Add New Complaint
+        </h1>
+
+        <br>
+
+        <form action="addComplaint"
+              method="post">
+
+            <!-- STUDENT ID -->
+
+            <div class="form-group">
+
+                <label>
+                    Student ID
+                </label>
+
+                <input type="number"
+                       name="studentId"
+                       class="form-control"
+                       placeholder="Enter Student ID"
+                       required>
+
+            </div>
+
+            <!-- CATEGORY ID -->
+
+            <div class="form-group">
+
+                <label>
+                    Category ID
+                </label>
+
+                <input type="number"
+                       name="categoryId"
+                       class="form-control"
+                       placeholder="Enter Category ID"
+                       required>
+
+            </div>
+
+            <!-- PRIORITY -->
+
+            <div class="form-group">
+
+                <label>
+                    Priority
+                </label>
+
+                <select name="priority"
+                        class="form-control">
+
+                    <option value="Low">
+                        Low
+                    </option>
+
+                    <option value="Medium">
+                        Medium
+                    </option>
+
+                    <option value="High">
+                        High
+                    </option>
+
+                </select>
+
+            </div>
+
+            <!-- DESCRIPTION -->
+
+            <div class="form-group">
+
+                <label>
+                    Description
+                </label>
+
+                <textarea name="description"
+                          class="form-control"
+                          rows="5"
+                          placeholder="Enter Complaint Description"
+                          required></textarea>
+
+            </div>
+
+            <!-- BUTTON -->
+
+            <button type="submit"
+                    class="btn">
+
+                Add Complaint
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Update Complaint</title>
+
+</head>
+
+<body>
+
+    <h1>Update Complaint</h1>
+
+    <form action="updateComplaint"
+          method="post">
+
+        <label>Ticket ID</label>
+
+        <input type="number"
+               name="ticketId"
+               required>
+
+        <br><br>
+
+        <label>Priority</label>
+
+        <select name="priority">
+
+            <option value="Low">
+                Low
+            </option>
+
+            <option value="Medium">
+                Medium
+            </option>
+
+            <option value="High">
+                High
+            </option>
+
+        </select>
+
+        <br><br>
+
+        <label>Description</label>
+
+        <br>
+
+        <textarea name="description"
+                  rows="5"
+                  cols="30"
+                  required></textarea>
+
+        <br><br>
+
+        <label>Status</label>
+
+        <select name="status">
+
+            <option value="Open">
+                Open
+            </option>
+
+            <option value="In Progress">
+                In Progress
+            </option>
+
+            <option value="Resolved">
+                Resolved
+            </option>
+
+        </select>
+
+        <br><br>
+
+        <button type="submit">
+
+            Update Complaint
+
+        </button>
+
+    </form>
+
+</body>
+
+</html>

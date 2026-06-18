@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+
+	
+	<bean id="comp" class="org.model.Company">
+		<property name="name" value="XYZ" />
+		<property name="TAN" value="ABC123MNOP" />
+		<property name="PAN" value="11223344" />
+	</bean>
+	<bean id="m" class="org.model.MSME">
+	     <property name="company"  ref="comp" />
+ 	</bean>
+</beans>
